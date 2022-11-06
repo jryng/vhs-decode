@@ -1,6 +1,6 @@
 ![vhs-decode logo](docs/vhs-decode_logo_256px.png)
 
-# VHS-Decode (It does more than VHS now!)
+# VHS-Decode - software decoding for analog videotape
 
 A fork of [LD-Decode](https://github.com/happycube/ld-decode), the decoding software powering the [Domesday86 Project](https://www.domesday86.com/).  
 This version has been modified to work with the differences found in the tracked RF drum head signals taken directly from videotapes.
@@ -19,7 +19,7 @@ SMPTE ColourBars (16:9) Test Tape With [WSS](https://en.wikipedia.org/wiki/Wides
 
 **Betamax** 625-line and 525-line, PAL & NTSC - **Working**
 
-**Video8 & High8** 625-line and 525-line, PAL & NTSC - **Working**
+**Video8 & Hi8** 625-line and 525-line, PAL & NTSC - **Working**
 
 ## [FAQ - Frequently Asked Questions](https://github.com/oyvindln/vhs-decode/wiki/FAQ)
 
@@ -39,11 +39,11 @@ Functional but still a work in progress is VideoMem's [HiFi-Decode Branch](https
 
 ## A Tape Player (VCR/VTR etc)
 
-Preferably adjusted per tape and in excellent mechanical and head condition, prosumer metal track decks are preferable as they were built generally better in terms of mechnical stability than cheaper later consumer decks that use more plastics, the only crtical requirement is test points or a head amplifyer that is easy to tap into this goes for any and all tape formats.
+Preferably adjusted per tape and in excellent mechanical and head condition, prosumer metal track decks are preferable as they were built generally better in terms of mechnical stability than cheaper later consumer decks that use more plastics, the only crtical requirement is test points or a head amplifier that is easy to tap into this goes for any and all tape formats.
 
 **Note** SVHS tapes can be RF captured on standard VHS HiFi decks.
 
-**Note** SVHS NTSC Decks - Currently inflated you can import PAL decks with NTSC support for 1/3rd the price though this only applys if  conventinal refrance SVHS captures are required.
+**Note** SVHS NTSC Decks - Currently inflated you can import PAL decks with NTSC support for 1/3rd the price though this only applys if conventional reference SVHS captures are required.
 
 Its good practice to not cross contaminate tapes especially if dealing with mouldy or contained tapes always clean your tape track/drum/heads before and afterwards with with 99.9% Isopropanol and lint free cloths/pads/paper this ensures less dropouts from dirty heads.
 
@@ -77,7 +77,7 @@ The cards sadly however at stock without any modifications these have more self-
 
 # Deployment of Capture Hardware
 
-Please Read the [VHS-Decode Wiki](https://github.com/oyvindln/vhs-decode/wiki) for more in-depth information as it has examples locations and setup photos for various decks that have been [RF tap'ed and tested](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List).
+Please Read the [VHS-Decode Wiki](https://github.com/oyvindln/vhs-decode/wiki) for more in-depth information as it has examples locations and setup photos for various decks that have been [RF tapped and tested](https://github.com/oyvindln/vhs-decode/wiki/004-The-Tap-List).
 
 If there is no info on your VCR in the wiki then acquire the service manual for your device, Google it! (But they are nearly all labelled clearly, so are not hard to visually identify and if serviced commonly marked with a sharpie)
 
@@ -255,7 +255,7 @@ But also notably VBI (Vertical Blanking Interval) data recovery software can be 
 
 `./gen_chroma_vid.sh --ffll 2 --lfll 308 --ffrl 2 --lfrl 620 <capture>.tbc`
 
-Please Check the Wiki for the complete [upto-date command list!](https://github.com/oyvindln/vhs-decode/wiki/Command-List)
+Please Check the Wiki for the complete [up-to-date command list!](https://github.com/oyvindln/vhs-decode/wiki/Command-List)
 
 *gen_chroma_vid.sh now automatically detects PAL/NTSC based on the .JSON legacy scripts still exsist*
 
